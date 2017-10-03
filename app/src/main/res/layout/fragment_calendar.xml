@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myDrawerBackground"
+    android:orientation="vertical"
+    tools:context="budget.kunal.com.budget.CalendarFragment">
+
+    <me.nlmartian.silkcal.DayPickerView
+        xmlns:calendar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@android:color/white"
+        calendar:drawRoundRect="false"/>
+
+    <com.malinskiy.superrecyclerview.SuperRecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_empty="@layout/emptyview_dark"
+        app:layout_moreProgress="@layout/view_more_progress"
+        app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"
+        app:recyclerClipToPadding="false"
+        app:recyclerPaddingLeft="4dp"
+        app:recyclerPaddingTop="4dp"
+        app:scrollbarStyle="insideInset" />
+
+</LinearLayout>

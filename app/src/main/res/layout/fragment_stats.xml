@@ -1,0 +1,22 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="budget.kunal.com.budget.StatsFragment">
+
+    <com.rey.material.widget.TabPageIndicator
+        style="@style/TabPageIndicator"
+        android:id="@+id/stats_tpi"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="20dp"
+        android:background="@color/myPrimaryColor"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/stats_vp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

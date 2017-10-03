@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@color/myBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.malinskiy.superrecyclerview.SuperRecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_empty="@layout/emptyview"
+        app:layout_moreProgress="@layout/view_more_progress"
+        app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"
+        app:recyclerClipToPadding="false"
+        app:recyclerPaddingLeft="4dp"
+        app:recyclerPaddingTop="4dp"
+        app:scrollbarStyle="insideInset" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        fab:menu_animationDelayPerItem="2"
+        fab:menu_colorNormal="#E91E63"
+        fab:menu_colorPressed="#D81B60"
+        fab:menu_colorRipple="#C2185B"
+        fab:menu_labels_hideAnimation="@anim/jump_to_down"
+        fab:menu_labels_showAnimation="@anim/jump_from_down"
+        fab:menu_labels_style="@style/MenuLabelsStyle"
+        fab:menu_shadowColor="#BDBDBD" >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_add"
+            style="@style/MenuButtonsStyleGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_up_arrow"
+            fab:fab_label="Received" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_spent"
+            style="@style/MenuButtonsStyleRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_down"
+            fab:fab_label="Spent" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+</FrameLayout>

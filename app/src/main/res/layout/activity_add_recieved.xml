@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    tools:context=".AlarmDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" >
+
+        <com.rey.material.widget.EditText
+            style="@style/Material.Widget.EditText.Light"
+            android:id="@+id/text_name_recieved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/myTextPrimaryColorGreen"
+            android:textColorHint="@color/myTextLightColor"
+            android:inputType="text"
+            android:hint="@string/add_name"
+            app:et_inputId="@+id/text_name_input"
+            app:et_supportMode="none" />
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/text_line2"
+            android:layout_below="@+id/text_name_recieved" >
+
+            <com.rey.material.widget.EditText
+                style="@style/Material.Widget.EditText.Light"
+                android:id="@+id/text_amount_recieved"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/myTextPrimaryColorGreen"
+                android:textColorHint="@color/myTextLightColor"
+                android:inputType="numberDecimal"
+                android:layout_marginRight="20dp"
+                android:hint="@string/add_amount"
+                app:et_inputId="@+id/text_amount_input"
+                app:et_supportMode="none" />
+
+            <com.rey.material.widget.EditText
+                style="@style/Material.Widget.EditText.Light"
+                android:id="@+id/text_place_optional_recieved"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/myTextPrimaryColorGreen"
+                android:textColorHint="@color/myTextLightColor"
+                android:inputType="text"
+                android:hint="@string/add_place_optional"
+                app:et_inputId="@+id/text_place_optional_input"
+                app:et_supportMode="none" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/text_line2"
+            android:id="@+id/add_label_slider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/myTextLightColor"
+            android:text="@string/add_slider_label"
+            android:textSize="14sp" />
+
+        <com.rey.material.widget.Slider
+            style="@style/Material.Widget.Slider.Discrete"
+            android:id="@+id/slider_recieved_importance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_label_slider"
+            android:gravity="center"
+            android:padding="16dp"
+            app:sl_primaryColor="@color/myPrimaryDarkColorGreen"
+            app:sl_secondaryColor="@color/myPrimaryColorGreen"
+            app:sl_stepValue="1"
+            app:sl_value="50"/>
+
+        <com.rey.material.widget.Button
+            style="@style/MenuItemRippleStyleGreen"
+            android:layout_below="@id/slider_recieved_importance"
+            android:id="@+id/add_recieved_save"
+            android:background="@color/myPrimaryColorGreen"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bt_height"
+            android:layout_weight="0.4"
+            android:textColor="#FFFFFF"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+            android:text="@string/button_save"
+            android:layout_marginBottom="16dp" />
+
+    </RelativeLayout>
+
+</ScrollView>
+

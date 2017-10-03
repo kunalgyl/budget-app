@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    tools:context=".AlarmDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp">
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/add_name_todo"
+            style="@style/Material.Widget.EditText.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_name"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/myTextPrimaryColorBlue"
+            android:textColorHint="@color/myTextLightColor"
+            app:et_inputId="@+id/text_name_input"
+            app:et_supportMode="none" />
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/text_place_optional_todo"
+            style="@style/Material.Widget.EditText.Light"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@id/add_name_todo"
+            android:hint="@string/add_place_optional"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/myTextPrimaryColorBlue"
+            android:textColorHint="@color/myTextLightColor"
+            app:et_inputId="@+id/text_place_optional_input"
+            app:et_supportMode="none" />
+
+        <TextView
+            android:id="@+id/add_label_slider_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_place_optional_todo"
+            android:layout_marginTop="14dp"
+            android:text="@string/add_slider_label"
+            android:textColor="@color/myTextLightColor"
+            android:textSize="14sp" />
+
+        <com.rey.material.widget.Slider
+            android:id="@+id/slider_todo_importance"
+            style="@style/Material.Widget.Slider.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_label_slider_todo"
+            android:gravity="center"
+            android:padding="16dp"
+            app:sl_primaryColor="@color/myPrimaryDarkColorBlue"
+            app:sl_secondaryColor="@color/myPrimaryColorBlue"
+            app:sl_stepValue="1"
+            app:sl_value="50" />
+
+        <com.rey.material.widget.Spinner
+            android:id="@+id/spinner_category_todo"
+            style="@style/Material.Widget.Spinner.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slider_todo_importance"
+            android:minWidth="256dp"
+            android:padding="16dp"
+            android:popupBackground="@color/myBackground"
+            app:rd_delayClick="none"
+            app:rd_enable="true"
+            app:rd_style="@style/Material.Drawable.Ripple.Wave.Light"
+            app:spn_arrowAnimDuration="@android:integer/config_shortAnimTime"
+            app:spn_arrowColor="@color/myTextLightColor"
+            app:spn_arrowInterpolator="@android:anim/decelerate_interpolator"
+            app:spn_arrowSwitchMode="true"
+            app:spn_label="@string/add_spinner_category"
+            app:spn_labelEnable="true" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/add_todo_save"
+            style="@style/MenuItemRippleStyleBlue"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bt_height"
+            android:layout_below="@id/spinner_category_todo"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="0.4"
+            android:background="@color/myPrimaryColorBlue"
+            android:text="@string/button_save"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+            android:textColor="#FFFFFF" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

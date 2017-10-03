@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBackground">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/todo_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/myRecyclerViewStyle"/>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/todo_fab_add"
+        style="@style/MenuButtonsStyleGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        fab:fab_colorNormal="#E91E63"
+        fab:fab_colorPressed="#D81B60"
+        fab:fab_colorRipple="#C2185B"
+        fab:fab_hideAnimation="@anim/jump_to_down"
+        fab:fab_showAnimation="@anim/jump_from_down"
+        fab:fab_shadowColor="#BDBDBD"
+        android:src="@drawable/ic_plus" />
+
+</FrameLayout>

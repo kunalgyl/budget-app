@@ -1,0 +1,133 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+        <item name="colorAccent">@color/myAccentColor</item>
+        <item name="android:textColorPrimary">@color/myTextPrimaryColor</item>
+        <item name="android:navigationBarColor">@color/myNavigationColor</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowBackground">@color/myBackground</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="MenuItemRippleStyle" parent="Material.Drawable.Ripple.Wave">
+        <item name="rd_rippleColor">@color/myPrimaryColorRed</item>
+        <item name="rd_rippleAnimDuration">300</item>
+        <item name="rd_maskType">rectangle</item>
+        <item name="rd_cornerRadius">0dp</item>
+    </style>
+
+    <style name="AppThemeDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/MyAnimation2.Window</item>
+    </style>
+
+    <style name="MyAnimation" />
+
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/abc_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/abc_fade_out</item>
+    </style>
+
+
+    <style name="AppThemeGreen" parent="Theme.AppCompat.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/myPrimaryColorGreen</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColorGreen</item>
+        <item name="colorAccent">@color/myAccentColorGreen</item>
+        <item name="android:textColorPrimary">@color/myTextPrimaryColorGreen</item>
+        <item name="android:navigationBarColor">@color/myNavigationColorGreen</item>
+        <item name="android:windowAnimationStyle">@style/MyAnimation2.Window</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowBackground">@color/myBackgroundGreen</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="AppThemeRed" parent="Theme.AppCompat.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/myPrimaryColorRed</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColorRed</item>
+        <item name="colorAccent">@color/myAccentColorRed</item>
+        <item name="android:textColorPrimary">@color/myTextPrimaryColorRed</item>
+        <item name="android:navigationBarColor">@color/myNavigationColorRed</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowAnimationStyle">@style/MyAnimation2.Window</item>
+        <item name="android:windowBackground">@color/myBackgroundRed</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="">
+        <item name="android:elevation">@dimen/toolbar_elevation</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorAccent">@color/myWindowAccent</item>
+        <item name="android:textColorPrimary">@color/myWindowText</item>
+        <item name="android:background">@color/myWindowBackground</item>
+    </style>
+
+    <style name="myTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style  name="TabPageIndicator"  parent="Material.Widget.TabPageIndicator.Light">
+        <item name="tpi_tabPadding">20dp</item>
+        <item name="tpi_tabRipple">@style/TabRippleStyle</item>
+        <item name="tpi_indicatorHeight">3dp</item>
+        <item name="android:textAppearance">@style/myTextAppearance</item>
+        <item name="tpi_mode">scroll</item>
+    </style>
+
+    <style name="TabRippleStyle" parent="Material.Drawable.Ripple.Wave">
+        <item name="android:background">@null</item>
+        <item name="rd_rippleColor">#7ED5D5</item>
+        <item name="rd_rippleAnimDuration">300</item>
+        <item name="rd_maskType">rectangle</item>
+        <item name="rd_cornerRadius">0dp</item>
+        <item name="rd_padding">0dp</item>
+    </style>
+
+    <style name="MenuLabelsStyle">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MenuButtonsStyleRed">
+        <item name="fab_size">mini</item>
+        <item name="fab_showAnimation">@anim/jump_from_down</item>
+        <item name="fab_hideAnimation">@anim/jump_to_down</item>
+        <item name="fab_shadowColor">#444</item>
+        <item name="fab_colorNormal">#F44336</item>
+        <item name="fab_colorPressed">#E53935</item>
+        <item name="fab_colorRipple">#D32F2F</item>
+    </style>
+
+    <style name="MenuButtonsStyleGreen">
+        <item name="fab_size">mini</item>
+        <item name="fab_showAnimation">@anim/jump_from_down</item>
+        <item name="fab_hideAnimation">@anim/jump_to_down</item>
+        <item name="fab_shadowColor">#444</item>
+        <item name="fab_colorNormal">#4CAF50</item>
+        <item name="fab_colorPressed">#43A047</item>
+        <item name="fab_colorRipple">#388E3C</item>
+    </style>
+
+</resources>

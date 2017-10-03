@@ -1,0 +1,78 @@
+<resources>
+
+    <!--
+        Check Android Theme colors for color reference:
+        https://developer.android.com/training/material/images/ThemeColors.png
+
+        Refer also to Color palette for the UI colors you should use:
+        http://www.google.com/design/spec/style/color.html#color-ui-color-palette
+    -->
+
+    <color name="myPrimaryColor">#7ECEC9</color>
+    <color name="myPrimaryDarkColor">#3D5F73</color>
+    <color name="myAccentColor">#FF4081</color>
+    <color name="myDrawerBackground">#505050</color>
+    <color name="myTextPrimaryColor">#212121</color>
+    <color name="myNavigationColor">#000</color>
+    <color name="myBackground">#FFFFFF</color>
+
+    <color name="myTextLightColor">#727272</color>
+
+    <color name="myWindowBackground">#5fa3d0</color>
+    <color name="myWindowAccent">#FFCC00</color>
+    <color name="myWindowText">#FFFFFF</color>
+
+    <color name="myGreen">#00C853</color>
+    <color name="myRed">#DD2C00</color>
+
+    <color name="myPrimaryColorGreen">#4CAF50</color>
+    <color name="myPrimaryDarkColorGreen">#388E3C</color>
+    <color name="myAccentColorGreen">#8BC34A</color>
+    <color name="myTextPrimaryColorGreen">#212121</color>
+    <color name="myNavigationColorGreen">#000</color>
+    <color name="myBackgroundGreen">#FFFFFF</color>
+
+    <color name="myPrimaryColorRed">#F44336</color>
+    <color name="myPrimaryDarkColorRed">#D32F2F</color>
+    <color name="myAccentColorRed">#FF5722</color>
+    <color name="myTextPrimaryColorRed">#212121</color>
+    <color name="myNavigationColorRed">#000</color>
+    <color name="myBackgroundRed">#FFFFFF</color>
+
+    <color name="myPrimaryColorBlue">#03A9F4</color>
+    <color name="myPrimaryDarkColorBlue">#0288D1</color>
+    <color name="myAccentColorBlue">#00BCD4</color>
+    <color name="myTextPrimaryColorBlue">#212121</color>
+    <color name="myNavigationColorBlue">#000</color>
+    <color name="myBackgroundBlue">#FFFFFF</color>
+
+
+    <color name="red">#FFC93437</color>
+    <color name="blue">#FF375BF1</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+
+    <color name="backgroundColor">@color/background_material_dark</color>
+    <color name="backgroundColorPress">@color/myPrimaryColor</color>
+
+    <color name="Stats1">#EE6233</color>
+    <color name="Stats2">#505050</color>
+    <color name="Stats3">#2c3e50</color>
+    <color name="Stats4">#A18259</color>
+    <color name="Stats5">#A18259</color>
+
+    <color name="myDarkGray">#2c3e50</color>
+
+    <color name="myHeaderBackground">#FFFFFF</color>
+
+    <drawable name="pressed_gray">#70B3B0</drawable>
+    <drawable name="selected_gray">#7ECEC9</drawable>
+
+    <color name="bg_swipe_item_neutral">#FFFFFF</color>
+    <color name="bg_swipe_item_right">#FF5534</color>
+
+    <color name="snackbar_action_color_done">#ffccccff</color>
+
+
+</resources>
+

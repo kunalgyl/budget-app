@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_sort"
+        android:orderInCategory="200"
+        android:title="Sort"
+        android:icon="@drawable/ic_sort"
+        app:showAsAction="ifRoom" >
+        <menu>
+            <item
+                android:id="@+id/todoImpHigh"
+                android:title="Importance - Highest First" />
+            <item
+                android:id="@+id/todoImpLow"
+                android:title="Importance - Lowest First" />
+            <item
+                android:id="@+id/todoSortCategory"
+                android:title="Category - Alphabetic" />
+            <item
+                android:id="@+id/todoSortName"
+                android:title="Name - Alphabetic" />
+            <item
+                android:id="@+id/todoSortPlace"
+                android:title="Place - Alphabetic" />
+        </menu>
+    </item>
+
+</menu>

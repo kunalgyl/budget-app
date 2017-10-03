@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="budget.kunal.com.budget" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddRecievedActivity"
+            android:label="@string/title_activity_add_recieved"
+            android:theme="@style/AppThemeGreen" >
+        </activity>
+        <activity
+            android:name=".AddSpentActivity"
+            android:label="@string/title_activity_add_spent"
+            android:theme="@style/AppThemeRed" >
+        </activity>
+        <activity
+            android:name=".AddTodoActivity"
+            android:label="@string/title_activity_add_todo"
+            android:theme="@style/AppThemeBlue" >
+
+        </activity>
+    </application>
+
+</manifest>

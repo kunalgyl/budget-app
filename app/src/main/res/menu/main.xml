@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_sort"
+        android:orderInCategory="200"
+        android:title="Sort"
+        android:icon="@drawable/ic_sort"
+        app:showAsAction="ifRoom" >
+        <menu>
+            <item
+                android:id="@+id/menuSortAmtHigh"
+                android:title="Amount - Highest First" />
+            <item
+                android:id="@+id/menuSortAmtLow"
+                android:title="Amount - Lowest First" />
+            <item
+                android:id="@+id/menuSortNew"
+                android:title="Date - Newest First" />
+            <item
+                android:id="@+id/menuSortOld"
+                android:title="Date - Oldest First" />
+            <item
+                android:id="@+id/menuSortImpHigh"
+                android:title="Importance - Highest First" />
+            <item
+                android:id="@+id/menuSortImpLow"
+                android:title="Importance - Lowest First" />
+            <item
+                android:id="@+id/menuSortCategory"
+                android:title="Category - Alphabetic" />
+            <item
+                android:id="@+id/menuSortName"
+                android:title="Name - Alphabetic" />
+            <item
+                android:id="@+id/menuSortPlace"
+                android:title="Place - Alphabetic" />
+
+        </menu>
+    </item>
+
+</menu>
